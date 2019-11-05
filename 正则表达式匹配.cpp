@@ -31,7 +31,6 @@
 //也就是模式串中的字符'*'匹配字符串中的字符多个的情况。
 
 
-
 class Solution {
     public:
         bool match(char* str, char* pattern)
