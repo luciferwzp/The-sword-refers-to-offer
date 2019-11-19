@@ -29,12 +29,10 @@ class Solution {
                     return rotateArray[index];
                 }
 
-
                 if(rotateArray[low]<=rotateArray[mid])         //最小元素在mid~high之间
                     low=mid;
                 else if (rotateArray[high]>=rotateArray[mid])   //最小元素在low~mid之间
                     high=mid;            
-
             }
             return -1;                    //查找失败
         }
