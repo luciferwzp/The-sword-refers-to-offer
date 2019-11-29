@@ -4,6 +4,7 @@
 //如果下一个数字和我们之前保存的数字不同，则次数减1。如果次数为零，我们需要保存下一个数字，并把次数设为1。
 //由于我们要找的数字出现的次数比其他所有数字出现的次数之和还要多，那么要找的数字肯定是最后一次把次数设为1时对应的数字。
 
+
 class Solution {
     public:
         int MoreThanHalfNum_Solution(vector<int> numbers) {

@@ -4,7 +4,6 @@
 
 //创建双向队列，遍历数组，奇数前插入，偶数后插入。最后使用assign方法实现不同容器但相容的类型赋值.
 
-
 class Solution {
     public:
         void reOrderArray(vector<int> &array) {

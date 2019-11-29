@@ -12,8 +12,7 @@
 //这里使用方法二。
 
 
-/*
- * struct ListNode {
+/* struct ListNode {
  *     int val;
  *         struct ListNode *next;
  *             ListNode(int x) :
