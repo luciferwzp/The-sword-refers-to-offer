@@ -15,7 +15,6 @@ bool Find(int* matrix, int rows, int columns, int number)
             {
                 found = true;
                 break;
-
             }
             else if(matrix[row * columns + column] > number)
                 //查找的数比此次右上角的数小，此列排除，列减减
@@ -23,12 +22,9 @@ bool Find(int* matrix, int rows, int columns, int number)
             else
                 //查找的数比此次右上角的数大，此行排除，行加加
                 ++row;
-
         }
-
     }
     return found;
-
 }
 
 
@@ -46,22 +42,16 @@ class Solution {
             {
                 if(array[row][col] > target){
                     col--;
-
                 }
                 else if(array[row][col] < target){
                     row++;
-
                 }
                 else{
                     return true;
-
                 }
-
             }
             return false;
-
         }
-
 };
 
 
