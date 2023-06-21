@@ -16,21 +16,27 @@
  *                             };*/
 class Solution {
     public:
-        ListNode* FindKthToTail(ListNode* pListHead, unsigned int k) {
-            if(pListHead == NULL || k == 0){
+        ListNode* FindKthToTail(ListNode* pListHead, unsigned int k)
+        {
+            if(pListHead == NULL || k == 0)
+            {
                 return NULL;
             }
             ListNode *pAhead = pListHead;
             ListNode *pBehind = pListHead;
-            for(unsigned int i = 0; i < k - 1; i++){
-                if(pAhead->next != NULL){
+            for(unsigned int i = 0; i < k - 1; i++)
+            {
+                if(pAhead->next != NULL)
+                {
                     pAhead = pAhead->next;
                 }
-                else{
+                else
+                {
                     return NULL;
                 }
             }
-            while(pAhead->next != NULL){
+            while(pAhead->next != NULL)
+            {
                 pAhead = pAhead->next;
                 pBehind = pBehind->next;
             }
